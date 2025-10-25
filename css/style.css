@@ -1,0 +1,468 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+    margin-top: 80px;
+    font-family: "Inter", sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: rgb(255, 255, 255);
+    padding: 1px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.headerLogo{
+    padding-top: 5px;
+    padding-left: 150px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: right;
+    align-items: center;
+    padding-right: 200px;
+}
+
+nav a{
+    padding: 1rem;
+    text-decoration: none;
+    color: #13243e;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover{
+    color: #667eea;
+}
+
+#sidebarBtn{
+    display: none;
+}
+
+aside {
+    display: none;
+}
+
+aside ul{
+    list-style: none;
+}
+aside li{
+    margin-bottom: 15px;
+}
+aside a{
+    text-decoration: none;
+    color: #13243e;
+    font-weight: 600;
+    margin: 15px;
+    transition: color 0.3s ease;
+}
+aside a:hover{
+    color: #667eea;
+}
+
+section{
+    padding: 150px 200px;
+}
+
+/* Home Section */
+#home{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.home-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.home-content h2{
+    font-family: "Playfair Display", serif;
+    font-size: 3.5rem;
+    color: #13243e;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.home-content p{
+    font-size: 1.25rem;
+    color: #5a6c7d;
+    line-height: 1.8;
+    margin: 0;
+}
+
+#startButton{
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: #194499;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    width: fit-content;
+    transition: all 0.3s ease;
+}
+
+#startButton:hover{
+    background: #0f2d66;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(25, 68, 153, 0.3);
+}
+
+.home-image{
+    position: relative;
+}
+
+.home-image img{
+    width: 125%;
+    height: auto;
+}
+
+/*Features Section*/
+#features{
+    text-align: center;
+    background-color: #13243e;
+    color:white;
+}
+
+#features h2{
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+#featureList{
+    color:black;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.featureBox{
+    color: #13243e;
+    background-color: white;
+    border-radius: 16px;
+    text-align: justify;
+    padding: 40px 15px;
+}
+
+.emoji{
+    font-size: 50px;
+}
+
+/*Review Section*/
+#reviews{
+    text-align: center;
+    background-color: #194499;
+}
+
+#reviews h2{
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+#userReviews{
+    color:black;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.reviewBox{
+    color: #13243e;
+    background-color: white;
+    border-radius: 16px;
+    text-align: justify;
+    padding: 40px 15px;
+}
+
+.userImage img{
+    border-radius: 100px;
+}
+
+.stars{
+    font-size: 1.2rem;
+}
+
+/*Pricing*/
+#pricing{
+    text-align: center;
+    color: #13243e;
+}
+
+#pricing h2{
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#priceList{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+#mostPopular{
+    position: absolute;
+    top: -21px;
+    left: 50%;
+    padding: 8px 30px;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    color:rgb(49, 26, 3);
+    background-color: #ffcf22;
+    white-space: nowrap;
+    font-weight: 700;
+}
+
+.priceBox{
+    position: relative;
+    background-color: white;
+    border-radius: 16px;
+    padding: 40px 15px;
+    border: solid 2px #13243e;
+    transition: all 0.3s ease;
+}
+
+.priceBox:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(19, 36, 62, 0.3);
+}
+
+#priceButton{
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: #13243e;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    width: fit-content;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#priceButton:hover{
+    background: #0a1a2e;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(19, 36, 62, 0.3);
+}
+
+/*Contact Section*/
+#contact{
+    padding-top: 10px;
+    text-align: center;
+    background-color:#1c3354;
+}
+
+#contact h2{
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+#contact p{
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+#contactInfo{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.contactBox i{
+    margin-right: 8px;
+}
+
+footer{
+    background-color: #13243e;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+footer p{
+    margin: 0;
+}
+
+/*Scroll Animation*/
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*Mobile Optimizations*/
+@media (max-width: 768px) {
+    body{
+        margin-top: 70px;
+    }
+    
+    header{
+        padding: 5px 10px;
+    }
+    
+    .headerLogo{
+        padding-left: 10px;
+        padding-top: 0;
+    }
+    
+    .headerLogo img{
+        width: 150px;
+    }
+
+    /*Mobile Sidebar*/
+    nav{
+        padding-right: 10px;
+        gap: 0;
+    }
+    
+    nav a{
+        display: none;
+        padding: 0.4rem 0.6rem;
+        font-size: 0.85rem;
+    }
+    
+    #sidebarBtn{
+        display: block;
+        background-color: white;
+        border-radius: 5px;
+        padding: 6px 10px;
+        color: #13243e;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        margin-right: 30px;
+        z-index: 1000;
+        transform: rotate(360deg);
+        transition: all 0.3s ease;
+    }
+    #sidebarBtn.active {
+        color: rgb(255, 255, 255);
+        background-color: #194499;
+        transform: rotate(90deg);
+        transition: all 0.3s ease;
+    }
+
+    section{
+        padding: 80px 20px;
+    }
+
+    aside {
+        display: block;
+        position: fixed;
+        top: -200px;
+        left: -20px;
+        width: 200vh;
+        height: 100px;
+        background-color: #ffffff;
+        padding-bottom: 90px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+    }
+    aside.open{
+        top: 50px;
+    }
+    
+    /* Home Section Mobile */
+    #home{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 60px 20px;
+    }
+    
+    .home-content{
+        text-align: center;
+        align-items: center;
+    }
+    
+    .home-content h2{
+        font-size: 2.2rem;
+    }
+    
+    .home-content p{
+        font-size: 1.1rem;
+    }
+    
+    .home-image{
+        order: -1;
+    }
+    
+    .home-image img{
+        width: 100%;
+    }
+    
+    /* Features Mobile */
+    #features h2,
+    #reviews h2,
+    #pricing h2,
+    #contact h2{
+        font-size: 2rem;
+    }
+    
+    #featureList,
+    #userReviews,
+    #priceList,
+    #contactInfo{
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding-top: 30px;
+    }
+    
+    .featureBox,
+    .reviewBox,
+    .priceBox,
+    .contactBox{
+        padding: 30px 20px;
+    }
+    
+    .emoji{
+        font-size: 40px;
+    }
+    
+    #mostPopular{
+        font-size: 0.85rem;
+        padding: 6px 20px;
+        top: -18px;
+    }
+    
+    #priceButton,
+    #startButton{
+        font-size: 1rem;
+        padding: 0.9rem 2rem;
+    }
+}
