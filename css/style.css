@@ -327,7 +327,7 @@ footer p{
 }
 
 /*Mobile Optimizations*/
-@media (max-width: 768px) {
+@media (max-width: 720px) {
     body{
         margin-top: 70px;
     }
